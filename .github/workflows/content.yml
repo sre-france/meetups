@@ -1,0 +1,40 @@
+name: Parse Issues
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  content:
+    if: contains(github.event.issue.labels.*.name, 'proposal')
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    - name: Show event payload
+      run: |
+        echo $GITHUB_REPOSITORY
+        echo $GITHUB_EVENT_PATH
+        ./scripts/create-content/main.py $GITHUB_EVENT_PATH
+        git status
+        git add -A
+    - name: Set issue number
+      id: issue-number
+      run: |
+        number=$(jq -r ".issue.number" $GITHUB_EVENT_PATH)
+        echo ::set-output name=number::$number
+    - name: Set issue author
+      id: issue-author
+      run: |
+        author=$(jq -r ".issue.user.login" $GITHUB_EVENT_PATH)
+        echo ::set-output name=author::$author
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3 
+      with:
+        branch: "content/update-${{ steps.issue-number.outputs.number }}"
+        commit-message: "[automated change] Closes #${{ steps.issue-number.outputs.number }}"
+        title: "Talk proposed by ${{ steps.issue-author.outputs.author }}"
+        body: "Talk proposed by @${{ steps.issue-author.outputs.author }}\n\nRefs #${{ steps.issue-number.outputs.number }}"
+        delete-branch: true
