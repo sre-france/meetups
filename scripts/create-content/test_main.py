@@ -29,6 +29,13 @@ class TestSlugyFunction(unittest.TestCase):
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
+    def test_double_quote(self):
+        date = "2020-10-02"
+        title = "A review of \"How Complex Systems Fail\""
+        expected = "cfp/2020-10-02-a-review-of-how-complex-systems-fail.md"
+        output = slugify(date, title)
+        self.assertEqual(expected, output)
+
     def test_question_mark(self):
         date = "2020-10-02"
         title = "how they test ?"
