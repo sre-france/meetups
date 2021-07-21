@@ -5,12 +5,11 @@ title: Proposal's title
 labels: proposal
 assignees: ''
 ---
-
 __author name__:
-<!-- your preferred name (can be Twitter handling too.) -->
+> your preferred name (can be Twitter handling too.)
 
 __author bio__:
-<!-- optional, a few words about you -->
+> optional, a few words about you
 
 __expected time__ :
 
@@ -23,4 +22,4 @@ __language__:
 - [ ] :uk:
 
 __abstract__:
-<!-- in a few lines, content of your talk -->
+> in a few lines, content of your talk
