@@ -1,5 +1,5 @@
 ---
-title: "a tour of horizon of container OS"
+title: "an overview of container OS"
 date: 2021-07-20T15:42:35Z
 github_username: tormath1
 twitter_username: tormath1
