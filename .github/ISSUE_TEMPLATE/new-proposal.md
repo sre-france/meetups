@@ -22,5 +22,9 @@ __language__:
 - [ ] :fr:
 - [ ] :uk:
 
+**this talk will be done**:
+- [ ] remotely
+- [ ] physically
+
 __abstract__:
 <!-- in a few lines, content of your talk -->
