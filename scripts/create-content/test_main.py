@@ -57,6 +57,20 @@ class TestSlugyFunction(unittest.TestCase):
         output = slugify(date, title)
         self.assertEqual(expected, output)
 
+    def test_slash_title(self):
+        date = "2020-10-02"
+        title = "ignition / butane: take the power back on your provisioning"
+        expected = "cfp/2020-10-02-ignition-butane-take-the-power-back-on-your-provisioning.md"
+        output = slugify(date, title)
+        self.assertEqual(expected, output)
+
+    def test_backslash_title(self):
+        date = "2020-10-02"
+        title = "ignition \ butane: take the power back on your provisioning"
+        expected = "cfp/2020-10-02-ignition-butane-take-the-power-back-on-your-provisioning.md"
+        output = slugify(date, title)
+        self.assertEqual(expected, output)
+
 
 class TestMain(unittest.TestCase):
     @mock.patch("sys.stdout", new_callable=StringIO)
