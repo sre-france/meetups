@@ -21,6 +21,7 @@ def slugify(date, title):
     slug = slug.replace("—", "")
     slug = slug.replace("…", "")
     slug = slug.replace("\"", "")
+    slug = slug.replace("/", "")
 
     # Remove leading, trailing and duplicated whitespaces
     slug = " ".join(slug.split())
