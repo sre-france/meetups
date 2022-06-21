@@ -24,7 +24,7 @@ __language__:
 
 **this talk can be done**:
 - [ ] remotely
-- [ ] physically <!-- SRE France meetups are hosted in various locations (Bordeaux, Paris, Lyon, etc.) - please let us now where you'll be available) -->
+- [ ] physically <!-- SRE France meetups are hosted in various locations (Bordeaux, Paris, Lyon, etc.) - please let us know where you'll be available) -->
 
 __abstract__:
 <!-- in a few lines, content of your talk -->
