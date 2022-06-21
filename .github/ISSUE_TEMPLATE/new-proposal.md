@@ -22,9 +22,9 @@ __language__:
 - [ ] :fr:
 - [ ] :uk:
 
-**this talk will be done**:
+**this talk can be done**:
 - [ ] remotely
-- [ ] physically
+- [ ] physically <!-- SRE France meetups are hosted in various locations (Bordeaux, Paris, Lyon, etc.) - please let us now where you'll be available) -->
 
 __abstract__:
 <!-- in a few lines, content of your talk -->
