@@ -28,7 +28,7 @@ jobs:
     - name: Set issue title
       id: issue-title
       run: |
-        author=$(jq -r ".issue.title" $GITHUB_EVENT_PATH)
+        title=$(jq -r ".issue.title" $GITHUB_EVENT_PATH)
         echo ::set-output name=title::$title
     - name: Set issue author
       id: issue-author
