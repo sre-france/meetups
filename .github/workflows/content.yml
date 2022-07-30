@@ -6,7 +6,7 @@ on:
 
 jobs:
   content:
-    if: contains(github.event.issue.labels.*.name, 'proposal')
+    if: contains(github.event.issue.labels.*.name, 'proposal') || contains(github.event.issue.labels.*.name, 'sre-summercamp')
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
