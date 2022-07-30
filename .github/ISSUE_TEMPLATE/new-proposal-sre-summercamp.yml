@@ -6,7 +6,7 @@ body:
 - type: input
   attributes:
     label: Author's Name
-    description: Your preferred name (it can be your Twitter handle too).
+    description: Your preferred name, it can be your Twitter handle too.
   validations:
     required: true
 - type: textarea
@@ -22,16 +22,14 @@ body:
       - Standard talk (~40 min)
       - Lightning talk (~15 min)
   validations:
-    required: false
+    required: true
 - type: checkboxes
   attributes:
     label: Language
     description: Most of the audience are French speakers but they understand English too. 
     options:
-      - label: ":fr: French"
-      - label: ":uk: English"
-  validations:
-      required: true
+      - label: "French"
+      - label: "English"
 - type: textarea
   attributes:
     label: Abstract
