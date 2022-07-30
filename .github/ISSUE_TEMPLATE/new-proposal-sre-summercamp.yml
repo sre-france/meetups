@@ -1,6 +1,5 @@
 name: SRE Summer Camp's talk proposal
 description: Submit a talk for the SRE Summer Camp
-title: "<Proposal's title>"
 labels: [sre-summercamp]
 body:
 - type: input
