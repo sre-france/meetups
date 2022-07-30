@@ -25,6 +25,11 @@ jobs:
       run: |
         number=$(jq -r ".issue.number" $GITHUB_EVENT_PATH)
         echo ::set-output name=number::$number
+    - name: Set issue title
+      id: issue-title
+      run: |
+        author=$(jq -r ".issue.title" $GITHUB_EVENT_PATH)
+        echo ::set-output name=title::$title
     - name: Set issue author
       id: issue-author
       run: |
@@ -35,6 +40,6 @@ jobs:
       with:
         branch: "content/update-${{ steps.issue-number.outputs.number }}"
         commit-message: "[automated change] Closes #${{ steps.issue-number.outputs.number }}"
-        title: "Talk proposed by ${{ steps.issue-author.outputs.author }}"
+        title: "[Talk] ${{ steps.issue-title.outputs.title }}"
         body: "Talk proposed by @${{ steps.issue-author.outputs.author }}\n\nRefs #${{ steps.issue-number.outputs.number }}"
         delete-branch: true
