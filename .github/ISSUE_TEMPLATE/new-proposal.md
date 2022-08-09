@@ -14,7 +14,7 @@ __author bio__:
 
 __expected time__ :
 
-- [ ] lightning talk (~ 5 min)
+- [ ] short talk (~ 5 min)
 - [ ] 15 min
 
 __language__:
