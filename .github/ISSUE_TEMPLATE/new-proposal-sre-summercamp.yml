@@ -19,7 +19,7 @@ body:
     label: Expected time
     options:
       - Standard talk (~40 min)
-      - Lightning talk (~15 min)
+      - Short talk (~15 min)
   validations:
     required: true
 - type: checkboxes
