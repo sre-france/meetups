@@ -1,0 +1,38 @@
+---
+name: New talk proposal
+description: Submit a talk proposal for a SRE France Meetup
+labels: [proposal]
+body:
+- type: input
+  attributes:
+    label: Author's Name
+    description: Your preferred name, it can be your social handle too.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Author's Bio
+    description: A few words about you.
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: Expected time
+    options:
+      - Standard talk (~15 min)
+      - Short talk (~5 min)
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: Language
+    description: Most of the audience are French speakers but English is ok too. 
+    options:
+      - label: "French"
+      - label: "English"
+- type: textarea
+  attributes:
+    label: Abstract
+    description: Describe your talk in a few lines.
+  validations:
+    required: true
