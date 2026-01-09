@@ -1,0 +1,48 @@
+name: 🎟️ I want my CND France 2026 ticket!
+description: Try your luck and win a CND France event ticket by opening a PR 🚀
+title: "🎟️ I want my CND France 2026 ticket!"
+labels:
+  - community
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        👋 Hey there!
+        
+        To win one of the **2 CND France event tickets**, open this issue **and create a Pull Request** in this repository.
+        
+        The **first two valid PRs** win 🎉  
+
+        Winners will be announced in the next meetup.
+
+        Good luck, and thanks for being part of the SRE France community ❤️
+
+  - type: input
+    id: social-handle
+    attributes:
+      label: Social network handle
+      description: How can we contact you if you win? (Bluesky, Mastodon, X, etc.)
+      placeholder: "@yourhandle@mastodon.social or https://bsky.app/profile/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why do you want to attend this event?
+      description: Optional, but we’d love to know 🙂
+      placeholder: "Because SRE, DevOps, and community!"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: I understand that only the first two valid PRs will win a ticket
+          required: true
+        - label: I agree to be contacted by SRE France for ticket logistics
+          required: true
