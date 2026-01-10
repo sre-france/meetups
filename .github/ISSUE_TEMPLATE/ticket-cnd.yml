@@ -1,5 +1,5 @@
 name: 🎟️ I want my CND France 2026 ticket!
-description: Try your luck and win a CND France event ticket by opening a PR 🚀
+description: Try your luck and win a CND France event ticket by opening an issue 🚀
 title: "🎟️ I want my CND France 2026 ticket!"
 labels:
   - community
@@ -9,21 +9,24 @@ body:
   - type: markdown
     attributes:
       value: |
-        👋 Hey there!
-        
-        To win one of the **2 CND France event tickets**, open this issue **and create a Pull Request** in this repository.
-        
-        The **first two valid PRs** win 🎉  
+        👋 Bonjour !
 
-        Winners will be announced in the next meetup.
+        Pour gagner une des deux places pour le CND France 2026 il faut :
 
-        Good luck, and thanks for being part of the SRE France community ❤️
+           1. Ouvrir une issue via ce template
+           2. C'est tout 🎉
+
+        Les deux premières personnes à ouvrir une issue valide gagneront une place gratuite chacune pour le [Cloud Native Days France 2026](https://www.cloudnativedays.fr/) 🥳
+
+        Les gagnants et gagnantes seront annoncées lors du prochaine meetup SRE France.
+
+        Bonne chance et merci de faire partie de la communauté SRE France ❤️
 
   - type: input
     id: social-handle
     attributes:
-      label: Social network handle
-      description: How can we contact you if you win? (Bluesky, Mastodon, X, etc.)
+      label: Identifiant sur un réseau social ou e-mail
+      description: Comment pouvons-nous te contacter si tu gagnes ? (Mastodon, Bluesky, X, etc.)
       placeholder: "@yourhandle@mastodon.social or https://bsky.app/profile/..."
     validations:
       required: true
@@ -31,18 +34,18 @@ body:
   - type: textarea
     id: motivation
     attributes:
-      label: Why do you want to attend this event?
-      description: Optional, but we’d love to know 🙂
-      placeholder: "Because SRE, DevOps, and community!"
+      label: Pourquoi veux-tu participer au CND France 2026 ?
+      description: Optionnel, mais on est curieux 🙂
+      placeholder: "Parce que SRE, DevOps, cloud et la communauté !"
     validations:
       required: false
 
   - type: checkboxes
     id: rules
     attributes:
-      label: Rules
+      label: Règles
       options:
-        - label: I understand that only the first two valid PRs will win a ticket
+        - label: Je comprends que seules les deux premières issues gagneront une place chacune pour le CND France 2026
           required: true
-        - label: I agree to be contacted by SRE France for ticket logistics
+        - label: Si je gagne, j'accepte d'être contacté·e par SRE France pour recevoir le billet
           required: true
