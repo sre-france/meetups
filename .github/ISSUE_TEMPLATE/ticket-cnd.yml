@@ -11,12 +11,11 @@ body:
       value: |
         👋 Bonjour !
 
-        Pour gagner une des deux places pour le CND France 2026 il faut :
+        Pour gagner **une des deux places pour le [Cloud Native Days France 2026](https://www.cloudnativedays.fr/)** il faut :
+        1. Ouvrir une issue via ce template
+        2. C'est tout 🎉
 
-           1. Ouvrir une issue via ce template
-           2. C'est tout 🎉
-
-        Les deux premières personnes à ouvrir une issue valide gagneront une place gratuite chacune pour le [Cloud Native Days France 2026](https://www.cloudnativedays.fr/) 🥳
+        Les **deux premières personnes à ouvrir une issue valide** gagneront une place gratuite chacune pour le [Cloud Native Days France 2026](https://www.cloudnativedays.fr/) 🥳
 
         Les gagnants et gagnantes seront annoncées lors du prochaine meetup SRE France.
 
@@ -25,7 +24,7 @@ body:
   - type: input
     id: social-handle
     attributes:
-      label: Identifiant sur un réseau social ou e-mail
+      label: Réseau social ou e-mail
       description: Comment pouvons-nous te contacter si tu gagnes ? (Mastodon, Bluesky, X, etc.)
       placeholder: "@yourhandle@mastodon.social or https://bsky.app/profile/..."
     validations:
