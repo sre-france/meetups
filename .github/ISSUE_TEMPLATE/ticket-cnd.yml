@@ -1,0 +1,50 @@
+name: 🎟️ I want my CND France 2026 ticket!
+description: Try your luck and win a CND France event ticket by opening an issue 🚀
+title: "🎟️ I want my CND France 2026 ticket!"
+labels:
+  - community
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        👋 Bonjour !
+
+        Pour gagner **une des deux places pour le [Cloud Native Days France 2026](https://www.cloudnativedays.fr/)** il faut :
+          1. Ouvrir une issue via ce template
+          2. C'est tout 🎉
+
+        Les **deux premières personnes à ouvrir une issue valide** gagneront une place gratuite chacune pour le [Cloud Native Days France 2026](https://www.cloudnativedays.fr/) 🥳
+
+        Les gagnants et gagnantes seront annoncés lors du prochaine meetup SRE France.
+
+        Bonne chance et merci de faire partie de la communauté SRE France ❤️
+
+  - type: input
+    id: social-handle
+    attributes:
+      label: Réseau social ou e-mail
+      description: Comment pouvons-nous te contacter si tu gagnes ? (Mastodon, Bluesky, X, etc.)
+      placeholder: "@yourhandle@mastodon.social or https://bsky.app/profile/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Pourquoi veux-tu participer au CND France 2026 ?
+      description: Optionnel, mais on est curieux 🙂
+      placeholder: "Parce que SRE, DevOps, cloud et la communauté !"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Règles
+      options:
+        - label: Je comprends que seules les deux premières issues gagneront une place chacune pour le CND France 2026
+          required: true
+        - label: Si je gagne, j'accepte d'être contacté·e par SRE France pour recevoir le billet
+          required: true
